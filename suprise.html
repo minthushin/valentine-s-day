@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="suprise.css">
+</head>
+
+<body>
+
+    <!-- Page 1: Password Entry -->
+    <div id="page1" class="page">
+        <h1>Enter your password</h1>
+        <div id="password-display">••••</div>
+        <div class="numpad">
+            <button onclick="enterDigit(1)">1</button>
+            <button onclick="enterDigit(2)">2</button>
+            <button onclick="enterDigit(3)">3</button>
+            <button onclick="enterDigit(4)">4</button>
+            <button onclick="enterDigit(5)">5</button>
+            <button onclick="enterDigit(6)">6</button>
+            <button onclick="enterDigit(7)">7</button>
+            <button onclick="enterDigit(8)">8</button>
+            <button onclick="enterDigit(9)">9</button>
+            <button onclick="clearPassword()">⭠</button>
+            <button onclick="enterDigit(0)">0</button>
+            <button onclick="checkPassword()">✔</button>
+        </div>
+    </div>
+
+    <!-- Page 2: Image Gallery -->
+    <div id="page2" class="page hidden">
+        <h1>You & Me</h1>
+        <div class="gallery">
+            <img src="first.jpg" alt="Image 1">
+            <img src="first.jpg" alt="Image 2">
+            <img src="first.jpg" alt="Image 3">
+            <img src="first.jpg" alt="Image 4">
+            <img src="first.jpg" alt="Image 5">
+            <img src="first.jpg" alt="Image 6">
+        </div>
+        <button onclick="goToPage3()">Next</button>
+    </div>
+
+    <!-- Page 3: Final Message -->
+    <div id="page3" class="page hidden">
+        <h1>I'm so lucky to have you ❤️</h1>
+        <p>Happy Valentine's Day, my love!</p>
+    </div>
+
+    <script src="suprise.js"></script>
+</body>
+
+</html>
